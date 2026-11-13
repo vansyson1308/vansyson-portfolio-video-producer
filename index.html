@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vansyson — Video Producer · Nightlife &amp; F&amp;B · Hà Nội</title>
+<meta name="description" content="Recaps, brand films and Reels for bars, clubs and restaurants in Hà Nội. Concept, edit, colour, sound and platform-ready delivery.">
+<meta name="theme-color" content="#0A090B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vansyson — Video Producer · Nightlife & F&B">
+<meta property="og:description" content="Nightlife & F&B films, cut to the beat of the room. Showreel 2026 and selected work.">
+<meta property="og:image" content="https://vansyson1308.github.io/vansyson-portfolio-video-producer/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/showreel-poster.jpg">
+<style>
+:root{
+  --bg:#0A090B; --bg2:#121013; --ink:#EDE3D1; --mute:rgba(237,227,209,.64); --dim:rgba(237,227,209,.42);
+  --line:rgba(237,227,209,.13); --mag:#FF2D87; --cyan:#20E3FF; --amber:#E7A54B;
+  --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans:"Barlow", "Segoe UI", system-ui, sans-serif;
+  --wrap:min(1240px, calc(100vw - 48px));
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:100;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.label{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.28em;text-transform:uppercase}
+.serif{font-family:var(--serif);font-weight:400}
+em{font-family:var(--serif);font-style:italic;font-weight:400}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+header.solid{background:rgba(10,9,11,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:34px;height:34px}
+.brand span{font-weight:600;font-size:14px;letter-spacing:.34em}
+nav{display:flex;align-items:center;gap:34px}
+nav a.link{font-size:14px;color:var(--mute);letter-spacing:.04em;transition:color .2s}
+nav a.link:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 22px;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.06em;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-solid{background:var(--ink);color:var(--bg)}
+.btn-solid:hover{background:#fff}
+.btn-line{border:1px solid rgba(237,227,209,.32)}
+.btn-line:hover{border-color:var(--ink)}
+.btn svg{width:16px;height:16px}
+.bar .btn{height:40px;padding:0 18px;font-size:13px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:112px 0 72px}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--mute);margin-bottom:30px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--mag);box-shadow:0 0 14px var(--mag);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(46px,6.3vw,98px);line-height:.96;letter-spacing:-.012em}
+h1 em{color:var(--ink);display:block;background:linear-gradient(92deg,#F3D9B5 0%,#EDE3D1 40%,#BFEFF5 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin-top:30px;max-width:520px;font-size:19px;color:var(--mute)}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0 44px;margin-top:64px;padding-top:26px;border-top:1px solid var(--line)}
+.facts dt{color:var(--dim);font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase}
+.facts dd{margin-top:6px;font-size:15px}
+
+.reel{position:relative;justify-self:center;width:min(100%,calc(min(78svh,760px) * 9 / 16))}
+.reel::before{content:"";position:absolute;inset:-14% -22%;z-index:-1;filter:blur(60px);opacity:.55;
+  background:radial-gradient(40% 35% at 25% 20%,rgba(255,45,135,.55),transparent 70%),radial-gradient(45% 40% at 80% 85%,rgba(32,227,255,.45),transparent 70%)}
+.frame{position:relative;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(237,227,209,.12)}
+.frame video{width:100%;height:100%;object-fit:cover}
+.chip{position:absolute;left:16px;top:16px;display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:rgba(10,9,11,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.chip i{width:6px;height:6px;border-radius:50%;background:#ff3b3b}
+.sound{position:absolute;right:14px;bottom:14px;display:flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;background:rgba(10,9,11,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;transition:background .2s}
+.sound:hover{background:rgba(10,9,11,.85)}
+.sound svg{width:16px;height:16px}
+.reel-cap{display:flex;justify-content:space-between;margin-top:16px;color:var(--dim);font-size:13px;letter-spacing:.04em}
+
+/* marquee */
+.marquee{border-bottom:1px solid var(--line);overflow:hidden;padding:22px 0;white-space:nowrap}
+.track{display:inline-flex;gap:48px;animation:slide 38s linear infinite;font-family:var(--serif);font-style:italic;font-size:30px;color:var(--mute)}
+.track span{display:inline-flex;align-items:center;gap:48px}
+.track span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--mag)}
+.track span:nth-child(even)::after{background:var(--cyan)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section.block{padding:130px 0}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:70px}
+.sec-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1}
+.sec-head .label{color:var(--dim)}
+
+.project{padding-bottom:120px;margin-bottom:120px;border-bottom:1px solid var(--line)}
+.project:last-child{margin-bottom:0;border-bottom:0;padding-bottom:0}
+.p-top{display:flex;align-items:baseline;gap:22px;margin-bottom:28px;flex-wrap:wrap}
+.num{font-size:13px;font-weight:600;letter-spacing:.2em;color:var(--dim)}
+.p-title{font-family:var(--serif);font-weight:400;font-size:clamp(40px,4.8vw,68px);line-height:1}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.tag{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+.tag.mag{border-color:rgba(255,45,135,.45);color:#ff7fb2}
+.tag.cyan{border-color:rgba(32,227,255,.4);color:#8af1ff}
+
+.player{position:relative;overflow:hidden;border-radius:16px;background:#000;box-shadow:0 0 0 1px rgba(237,227,209,.1)}
+.player video{width:100%;height:100%;object-fit:cover}
+.player.wide{aspect-ratio:16/9}
+.player.tall{aspect-ratio:9/16}
+.play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:linear-gradient(180deg,rgba(10,9,11,0) 40%,rgba(10,9,11,.55));transition:opacity .35s}
+.play .ring{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:rgba(237,227,209,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 0 0 1px rgba(237,227,209,.35);transition:transform .25s,background .25s}
+.play .ring svg{width:26px;height:26px;margin-left:4px}
+.play:hover .ring{transform:scale(1.07);background:rgba(237,227,209,.24)}
+.play .label{color:var(--ink)}
+.player.playing .play{opacity:0;pointer-events:none}
+
+.p-body{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;margin-top:44px}
+.p-body p{font-size:19px;color:var(--mute);max-width:620px}
+.p-body p strong{color:var(--ink);font-weight:500}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:14px 28px;align-content:start;font-size:15px}
+.meta dt{color:var(--dim);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;padding-top:3px}
+.frames{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px}
+.frames img{width:100%;border-radius:10px;object-fit:cover}
+.frames.cine img{aspect-ratio:2.39/1}
+
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.split .player.tall{max-height:86svh;width:min(100%,calc(86svh * 9 / 16));position:sticky;top:96px}
+.split .p-top{margin-bottom:22px}
+.split .p-title{font-size:clamp(40px,5vw,76px)}
+.split .tags{margin-left:0;margin-bottom:36px}
+.split p{font-size:19px;color:var(--mute)}
+.split p strong{color:var(--ink);font-weight:500}
+.split .meta{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.frames.tall{grid-template-columns:repeat(3,1fr);margin-top:46px}
+.frames.tall img{aspect-ratio:9/16}
+
+/* approach */
+.approach{background:var(--bg2);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.step{padding:34px 30px 10px 0}
+.step + .step{padding-left:30px;border-left:1px solid var(--line)}
+.step .num{display:block;margin-bottom:46px}
+.step h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;margin-bottom:14px}
+.step p{font-size:15.5px;color:var(--mute)}
+.ships{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:72px;padding-top:30px;border-top:1px solid var(--line)}
+.ships .label{color:var(--dim);margin-right:8px}
+.ships span:not(.label){display:inline-flex;align-items:center;gap:10px;font-size:15px}
+.ships span:not(.label)::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--amber)}
+
+/* contact */
+.contact{padding:150px 0 120px;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;left:50%;top:40%;width:900px;height:520px;transform:translate(-50%,-50%);filter:blur(90px);opacity:.32;z-index:-1;
+  background:radial-gradient(closest-side at 35% 50%,rgba(255,45,135,.7),transparent),radial-gradient(closest-side at 68% 55%,rgba(32,227,255,.55),transparent)}
+.contact .label{color:var(--dim)}
+.contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(46px,7vw,112px);line-height:.98;margin:26px auto 0;max-width:1000px}
+.contact h2 em{display:block}
+.contact .ctas{justify-content:center;margin-top:54px}
+.contact .note{margin-top:30px;color:var(--dim);font-size:14px;letter-spacing:.04em}
+footer{border-top:1px solid var(--line)}
+.foot{display:flex;align-items:center;justify-content:space-between;height:84px;color:var(--dim);font-size:13px}
+.foot .brand img{width:24px;height:24px}
+.foot .brand span{font-size:12px;color:var(--mute)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+/* responsive */
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .reel{width:min(100%,420px)}
+  .split{grid-template-columns:1fr;gap:44px}
+  .split .player.tall{position:relative;top:0;width:min(100%,460px);margin-inline:auto}
+  .p-body{grid-template-columns:1fr;gap:36px}
+  .steps{grid-template-columns:1fr 1fr}
+  .step:nth-child(3){padding-left:0;border-left:0}
+  .step:nth-child(n+3){border-top:1px solid var(--line);margin-top:20px}
+}
+@media (max-width:720px){
+  :root{--wrap:calc(100vw - 36px)}
+  body{font-size:16px}
+  nav a.link{display:none}
+  .hero{padding-top:104px}
+  .lead,.p-body p,.split p{font-size:17px}
+  .facts{grid-template-columns:1fr 1fr;gap:20px 28px;margin-top:48px}
+  .facts div:last-child{grid-column:1/-1}
+  section.block{padding:96px 0}
+  .sec-head{margin-bottom:48px}
+  .project{padding-bottom:84px;margin-bottom:84px}
+  .tags{margin-left:0}
+  .frames{gap:8px}
+  .steps{grid-template-columns:1fr}
+  .step,.step + .step{padding:28px 0 8px;border-left:0}
+  .step:nth-child(n+2){border-top:1px solid var(--line);margin-top:0}
+  .step .num{margin-bottom:22px}
+  .track{font-size:24px}
+  .contact{padding:110px 0 90px}
+  .foot{flex-direction:column;justify-content:center;gap:8px;height:auto;padding:26px 0}
+}
+</style>
+</head>
+<body>
+
+<header id="top-bar">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Vansyson — home"><img src="assets/img/mark.png" alt="" width="34" height="34"><span>VANSYSON</span></a>
+    <nav>
+      <a class="link" href="#work">Work</a>
+      <a class="link" href="#approach">Approach</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn btn-solid" href="#contact">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow label rv"><span class="dot"></span>Video Producer · Nightlife &amp; F&amp;B · Hà Nội</p>
+        <h1 class="rv">Nightlife &amp; F&amp;B films, <em>cut to the beat of the&nbsp;room.</em></h1>
+        <p class="lead rv">Recaps, brand films and Reels for bars, clubs and restaurants — from concept and edit to colour, sound and platform-ready delivery.</p>
+        <div class="ctas rv">
+          <button class="btn btn-solid" id="reel-sound-cta" type="button">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.6-6.86a1 1 0 0 0 0-1.7L9.53 4.29A1 1 0 0 0 8 5.14z"/></svg>
+            Play showreel with sound
+          </button>
+          <a class="btn btn-line" href="#work">Selected work</a>
+        </div>
+        <dl class="facts rv">
+          <div><dt>Showreel</dt><dd>2026 · 0:37</dd></div>
+          <div><dt>Client</dt><dd>-wan- Tantan Ramen</dd></div>
+          <div><dt>Delivery</dt><dd>9:16 · 16:9 · 2.39:1</dd></div>
+        </dl>
+      </div>
+
+      <div class="reel rv">
+        <div class="frame">
+          <video id="reel" src="assets/video/showreel.mp4" poster="assets/img/showreel-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Vansyson showreel 2026"></video>
+          <span class="chip"><i></i>Showreel 2026</span>
+          <button class="sound" id="reel-sound" type="button" aria-pressed="false">
+            <svg id="ico-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+            <svg id="ico-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+            <span id="sound-txt">Sound off</span>
+          </button>
+        </div>
+        <div class="reel-cap"><span>One night in Hanoi</span><span>9:16 · 37s</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Club recaps</span><span>Brand films</span><span>Reels &amp; TikTok</span><span>Menu &amp; drink content</span><span>Event aftermovies</span><span>Monthly venue content</span>
+      <span>Club recaps</span><span>Brand films</span><span>Reels &amp; TikTok</span><span>Menu &amp; drink content</span><span>Event aftermovies</span><span>Monthly venue content</span>
+    </div>
+  </div>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <div class="sec-head rv"><h2>Selected work</h2><span class="label">02 films</span></div>
+
+      <article class="project">
+        <div class="p-top rv">
+          <span class="num">01</span>
+          <h3 class="p-title">The Slow Hour</h3>
+          <div class="tags"><span class="tag mag">Brand film</span><span class="tag">Cocktail bar</span><span class="tag">2.39 : 1</span></div>
+        </div>
+        <div class="player wide rv" data-player>
+          <video src="assets/video/the-slow-hour.mp4" poster="assets/img/the-slow-hour-poster.jpg" preload="none" playsinline aria-label="The Slow Hour — brand film"></video>
+          <button class="play" type="button" aria-label="Play The Slow Hour">
+            <span class="ring"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.6-6.86a1 1 0 0 0 0-1.7L9.53 4.29A1 1 0 0 0 8 5.14z"/></svg></span>
+            <span class="label">Play film · 0:40</span>
+          </button>
+        </div>
+        <div class="p-body">
+          <p class="rv">A film about the one thing a good bar sells that isn’t on the menu: <strong>time</strong>. Ice, stir, strain, peel, the first sip — each beat held a little longer than you’d expect, cut to a slow lounge groove and graded in warm amber against deep shadow, so the room feels like the place to stay for one more.</p>
+          <dl class="meta rv">
+            <dt>Format</dt><dd>16:9 master · 2.39 : 1 frame</dd>
+            <dt>Runtime</dt><dd>0:40</dd>
+            <dt>Role</dt><dd>Concept, edit, colour, sound design</dd>
+            <dt>Mix</dt><dd>−16 LUFS · web &amp; venue screens</dd>
+          </dl>
+        </div>
+        <div class="frames cine rv">
+          <img src="assets/img/tsh-frame-01.jpg" alt="Still: ice dropped into a crystal mixing glass" loading="lazy">
+          <img src="assets/img/tsh-frame-02.jpg" alt="Still: bartender stirring an amber cocktail" loading="lazy">
+          <img src="assets/img/tsh-frame-03.jpg" alt="Still: orange peel garnish over the glass" loading="lazy">
+        </div>
+      </article>
+
+      <article class="project split">
+        <div class="player tall rv" data-player>
+          <video src="assets/video/hanoi-after-dark.mp4" poster="assets/img/hanoi-after-dark-poster.jpg" preload="none" playsinline aria-label="Hanoi After Dark — club recap"></video>
+          <button class="play" type="button" aria-label="Play Hanoi After Dark">
+            <span class="ring"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.53.85l10.6-6.86a1 1 0 0 0 0-1.7L9.53 4.29A1 1 0 0 0 8 5.14z"/></svg></span>
+            <span class="label">Play recap · 0:33</span>
+          </button>
+        </div>
+        <div>
+          <div class="p-top rv"><span class="num">02</span></div>
+          <h3 class="p-title rv">Hanoi After Dark</h3>
+          <div class="tags rv" style="margin-top:22px"><span class="tag cyan">Club recap</span><span class="tag">Reels · TikTok</span><span class="tag">9 : 16</span></div>
+          <p class="rv">Built like a night out. It opens <strong>muffled</strong>, as if you’re still in the corridor — then the door swings open on the drop. Beat-cut at 124 BPM around a single DJ, with a cyan–magenta grade held across every shot, so the whole recap reads as one night in one room.</p>
+          <dl class="meta rv">
+            <dt>Format</dt><dd>9:16 vertical · Reels-ready</dd>
+            <dt>Runtime</dt><dd>0:33</dd>
+            <dt>Role</dt><dd>Concept, edit, colour, sound design</dd>
+            <dt>Mix</dt><dd>−14 LUFS · mobile playback</dd>
+          </dl>
+          <div class="frames tall rv">
+            <img src="assets/img/had-frame-01.jpg" alt="Still: DJ hands on the mixer under neon" loading="lazy">
+            <img src="assets/img/had-frame-02.jpg" alt="Still: crowd silhouettes under stage beams" loading="lazy">
+            <img src="assets/img/had-frame-03.jpg" alt="Still: DJ raising an arm to the crowd" loading="lazy">
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="block approach" id="approach">
+    <div class="wrap">
+      <div class="sec-head rv"><h2>How a project <em>runs</em></h2><span class="label">From brief to post</span></div>
+      <div class="steps">
+        <div class="step rv"><span class="num">01</span><h3>Brief &amp; mood</h3><p>What the venue should feel like at its best hour — references, music direction and the one idea the film is built around.</p></div>
+        <div class="step rv"><span class="num">02</span><h3>Capture plan</h3><p>A shot list timed to the room: signature drinks and dishes, the crowd at peak, the details regulars notice.</p></div>
+        <div class="step rv"><span class="num">03</span><h3>Edit, colour &amp; sound</h3><p>Cut to the track’s grid, one consistent grade across every shot, sound designed and mixed to platform loudness.</p></div>
+        <div class="step rv"><span class="num">04</span><h3>Delivery</h3><p>Ready-to-post files for each channel, named and organised, so the team can publish the same day.</p></div>
+      </div>
+      <div class="ships rv">
+        <span class="label">Every delivery</span>
+        <span>9:16 &amp; 16:9 masters</span><span>Instagram-ready encodes</span><span>Reel covers</span><span>Stills for menus &amp; posts</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="label rv">Contact</p>
+      <h2 class="rv">Got a night worth remembering? <em>Let’s film it.</em></h2>
+      <div class="ctas rv">
+        <a class="btn btn-solid" href="mailto:sonnv.hd34@gmail.com?subject=Video%20project%20%E2%80%94%20Vansyson">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          sonnv.hd34@gmail.com
+        </a>
+        <a class="btn btn-line" href="https://zalo.me/0384984631" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12z"/></svg>
+          Zalo · +84 384 984 631
+        </a>
+      </div>
+      <p class="note rv">Based in Hà Nội · One-off films and monthly venue content</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top"><img src="assets/img/mark.png" alt="" width="24" height="24"><span>VANSYSON</span></a>
+    <span>© <span id="yr">2026</span> Vansyson · Video Producer, Hà Nội</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const bar = document.getElementById('top-bar');
+  const onScroll = () => bar.classList.toggle('solid', window.scrollY > 24);
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const reel = document.getElementById('reel');
+  const btn = document.getElementById('reel-sound');
+  const on = document.getElementById('ico-on'), off = document.getElementById('ico-off'), txt = document.getElementById('sound-txt');
+  const players = [...document.querySelectorAll('[data-player]')];
+  let reelRestarted = false;
+
+  const pauseOthers = (except) => {
+    players.forEach(p => { const v = p.querySelector('video'); if (v !== except && !v.paused) v.pause(); });
+    if (except !== reel && !reel.muted) setReelSound(false);
+  };
+  function setReelSound(enable){
+    reel.muted = !enable;
+    btn.setAttribute('aria-pressed', String(enable));
+    on.hidden = !enable; off.hidden = enable; txt.textContent = enable ? 'Sound on' : 'Sound off';
+    if (enable){
+      if (!reelRestarted){ reel.currentTime = 0; reelRestarted = true; }
+      pauseOthers(reel); reel.play().catch(()=>{});
+    }
+  }
+  btn.addEventListener('click', () => setReelSound(reel.muted));
+  document.getElementById('reel-sound-cta').addEventListener('click', () => {
+    reelRestarted = false; setReelSound(true);
+    if (innerWidth < 1020) reel.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+
+  players.forEach(p => {
+    const v = p.querySelector('video'), b = p.querySelector('.play');
+    b.addEventListener('click', () => { pauseOthers(v); v.controls = true; v.play().catch(()=>{}); });
+    v.addEventListener('play', () => { p.classList.add('playing'); pauseOthers(v); });
+    v.addEventListener('ended', () => { p.classList.remove('playing'); v.controls = false; v.load(); });
+  });
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
