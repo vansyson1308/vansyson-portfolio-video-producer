@@ -32,6 +32,7 @@ body::before{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:10
 img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+[hidden]{display:none!important}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
 .wrap{width:var(--wrap);margin-inline:auto}
 .label{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.28em;text-transform:uppercase}
@@ -176,7 +177,12 @@ footer{border-top:1px solid var(--line)}
   .hero-grid{grid-template-columns:1fr;gap:56px}
   .reel{width:min(100%,420px)}
   .split{grid-template-columns:1fr;gap:44px}
-  .split .player.tall{position:relative;top:0;width:min(100%,460px);margin-inline:auto}
+  .split{display:flex;flex-direction:column;gap:0}
+  .split > div:last-child{display:contents}
+  .split .p-top{order:0;margin-bottom:10px}.split .p-title{order:0}.split .tags{order:0;margin-bottom:30px}
+  .split .player.tall{order:1;position:relative;top:0;width:min(100%,460px);margin-inline:auto}
+  .split > div:last-child > p,.split .meta,.split .frames{order:2}
+  .split > div:last-child > p{margin-top:36px}
   .p-body{grid-template-columns:1fr;gap:36px}
   .steps{grid-template-columns:1fr 1fr}
   .step:nth-child(3){padding-left:0;border-left:0}
@@ -191,7 +197,10 @@ footer{border-top:1px solid var(--line)}
   .facts{grid-template-columns:1fr 1fr;gap:20px 28px;margin-top:48px}
   .facts div:last-child{grid-column:1/-1}
   section.block{padding:96px 0}
-  .sec-head{margin-bottom:48px}
+  .sec-head{margin-bottom:48px;flex-direction:column;align-items:flex-start;gap:14px}
+  h1{font-size:clamp(40px,11.2vw,58px)}
+  .play .ring{width:62px;height:62px}
+  .player.wide .play .label{display:none}
   .project{padding-bottom:84px;margin-bottom:84px}
   .tags{margin-left:0}
   .frames{gap:8px}
